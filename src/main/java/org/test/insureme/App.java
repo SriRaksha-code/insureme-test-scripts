@@ -22,10 +22,12 @@ public class App
     public static void main( String[] args ) throws InterruptedException, IOException
     {
         System.out.println( "script started" );
+        WebDriverManager.chromedriver().setup();
       
         //System.setProperty("webdriver.chrome.driver","C:/Users/SRI RAKSHA/Downloads/chromedriver-win64/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+        //System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
+      //  chromeOptions.addArguments("--headless");
         System.out.println("Driver opening up the url in browser");
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("http:/localhost:8081//contact.html");
@@ -33,6 +35,7 @@ public class App
         System.out.println("Enter details in the form");
         driver.findElement(By.id("inputName")).sendKeys("sam");
         Thread.sleep(1000);
+        driver.findElement(By.id("inputNumber")).sendKeys("8964527364");
         driver.findElement(By.id("inputMail")).sendKeys("sam@xyz.com");
         driver.findElement(By.id("inputMessage")).sendKeys("hello");
         driver.findElement(By.id("my-button")).click();

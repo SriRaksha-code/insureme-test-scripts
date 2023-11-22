@@ -23,7 +23,7 @@ public class App
     {
         System.out.println( "script started" );
       
-        System.setProperty("webdriver.chrome.driver","C:/Users/SRI RAKSHA/Downloads/chromedriver-win64/chromedriver.exe");
+       // System.setProperty("webdriver.chrome.driver","C:/Users/SRI RAKSHA/Downloads/chromedriver-win64/chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         System.out.println("Driver opening up the url in browser");
         WebDriver driver = new ChromeDriver(chromeOptions);

@@ -40,7 +40,7 @@ public class App
         System.out.println("test script executed");
         TakesScreenshot scrShot = ((TakesScreenshot)driver);
         File scrFile = scrShot.getScreenshotAs(OutputType.FILE);
-        File destFile = new File("D:\\Devops\\test-report.jpg");
+        File destFile = new File("home/ubuntu/test-report.jpg");
         FileUtils.copyFile(scrFile,destFile);
         
            

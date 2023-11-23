@@ -24,8 +24,8 @@ public class App
         System.out.println( "script started" );
         WebDriverManager.chromedriver().setup();
       
-        //System.setProperty("webdriver.chrome.driver","C:/Users/SRI RAKSHA/Downloads/chromedriver-win64/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver","C:/Users/SRI RAKSHA/Downloads/chromedriver-win64/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
        chromeOptions.addArguments("--headless");
         System.out.println("Driver opening up the url in browser");

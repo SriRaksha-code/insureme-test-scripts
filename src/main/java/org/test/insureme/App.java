@@ -31,7 +31,7 @@ public class App
        chromeOptions.addArguments("--headless");
         System.out.println("Driver opening up the url in browser");
         WebDriver driver = new ChromeDriver(chromeOptions);
-        driver.get("http://100.26.32.1:8081//contact.html");
+        driver.get("http://52.54.128.200:8081//contact.html");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         System.out.println("Enter details in the form");
         driver.findElement(By.id("inputName")).sendKeys("sam");

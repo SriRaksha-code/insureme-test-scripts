@@ -24,13 +24,13 @@ public class App
         System.out.println( "script started" );
         WebDriverManager.chromedriver().setup();
       
-        System.setProperty("webdriver.chrome.driver","C:/Users/SRI RAKSHA/Downloads/chromedriver-win64/chromedriver.exe");
+       // System.setProperty("webdriver.chrome.driver","C:/Users/SRI RAKSHA/Downloads/chromedriver-win64/chromedriver.exe");
         //System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
        chromeOptions.addArguments("--headless");
         System.out.println("Driver opening up the url in browser");
         WebDriver driver = new ChromeDriver(chromeOptions);
-        driver.get("http:/18.212.237.110:8081//contact.html");
+        driver.get("http://18.212.237.110:8081//contact.html");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         System.out.println("Enter details in the form");
         driver.findElement(By.id("inputName")).sendKeys("sam");
